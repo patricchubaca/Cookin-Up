@@ -17,9 +17,9 @@ export default {
             <span class="subtitulo-lg sua-lista-texto">
                 <ul class="ingredientes-sua-lista">
                     <li v-for="ingrediente in ingredientes" class="ingrediente">{{ ingrediente }}</li>
-
                 </ul>
-               
+                <p> <img src="../assets/imagens-main/images/icones/lista-vazia.svg" alt="Ícone de pesquisa">
+                    Sua lista está vazia, selecione ingredientes para iniciar.</p>
             </span>
         </section>
 
