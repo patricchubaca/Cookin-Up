@@ -1,29 +1,29 @@
 <script lang="ts">
 
 export default {
-    data(){
-        return{
-           ingredientes: ['alho','manteiga', 'oregano']
-        }
+  data() {
+    return {
+      ingredientes: ['alho', 'manteiga', 'oregano']
     }
+  }
 }
 </script>
 <template>
-    <main class="conteudo-principal">
-        <section>
-            <span class="subtitulo-lg sua-lista-texto">
-                Sua lista:
-            </span>
-            <span class="subtitulo-lg sua-lista-texto">
-                <ul class="ingredientes-sua-lista">
-                    <li v-for="ingrediente in ingredientes" class="ingrediente">{{ ingrediente }}</li>
-                </ul>
-                <p> <img src="../assets/imagens-main/images/icones/lista-vazia.svg" alt="Ícone de pesquisa">
-                    Sua lista está vazia, selecione ingredientes para iniciar.</p>
-            </span>
-        </section>
+  <main class="conteudo-principal">
+    <section>
+      <span class="subtitulo-lg sua-lista-texto">
+        Sua lista:
+      </span>
+      <span class="subtitulo-lg sua-lista-texto">
+        <ul v-if="ingredientes.length" class="ingredientes-sua-lista">
+          <li v-for="ingrediente in ingredientes" class="ingrediente">{{ ingrediente }}</li>
+        </ul>
+        <p v-else class="paragrafo lista-vazia"> <img src="../assets/imagens-main/images/icones/lista-vazia.svg" alt="Ícone de pesquisa">
+          Sua lista está vazia, selecione ingredientes para iniciar.</p>
+      </span>
+    </section>
 
-    </main>
+  </main>
 </template>
 <style scoped>
 .conteudo-principal {
@@ -58,8 +58,8 @@ export default {
   min-width: 4.25rem;
   padding: 0.5rem;
   text-align: center;
-    transition: 0.2s;
-    color: var(--creme, #FFFAF3);
+  transition: 0.2s;
+  color: var(--creme, #FFFAF3);
   background: var(--coral, #F0633C);
   font-weight: 700;
 }
@@ -88,5 +88,4 @@ export default {
     gap: 4rem;
   }
 }
-
 </style>
