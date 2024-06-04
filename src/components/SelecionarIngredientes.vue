@@ -25,6 +25,8 @@ export default {
     <ul class="categorias">
       <li v-for="categoria in categorias" :key="categoria.nome">
         {{ categoria.nome }}
+        {{ categoria.ingredientes }}
+        {{ categoria.imagem }}
       </li>
     </ul>
 
