@@ -9,6 +9,13 @@ export default {
 </script>
 
 <template>
+    <article class="categoria">
+        <header class="categoria_cabecalho">
+
+
+        </header>
+
+    </article>
     {{ categoria.nome }}
     {{ categoria.ingredientes }}
 </template>

@@ -26,7 +26,8 @@ export default {
       <li v-for="categoria in categorias" :key="categoria.nome">
         <span>{{ categoria.nome }}</span>
         <span> {{ categoria.ingredientes }}</span>
-        <span> {{ categoria.imagem }}</span>
+        <span> <img :src="`/src/assets/imagens-main/images/icones/categorias_ingredientes/${categoria.imagem}`" alt=""
+            class="categoria__imagem"> </span>
       </li>
     </ul>
 
