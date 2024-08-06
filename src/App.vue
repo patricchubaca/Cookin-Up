@@ -10,6 +10,9 @@ export default {
 </script>
 
 <template>
+
   <Banner />
+
   <ConteudoPrincipal />
+
 </template>

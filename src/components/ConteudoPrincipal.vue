@@ -15,21 +15,30 @@ export default {
 
 <template>
   <main class="conteudo-principal">
+    
     <section>
       <span class="subtitulo-lg sua-lista-texto">
         Sua lista:
       </span>
+
       <SelecioanarIngredientes />
+
       <span class="subtitulo-lg sua-lista-texto">
+
         <ul v-if="ingredientes.length" class="ingredientes-sua-lista">
           <li v-for="ingrediente in ingredientes" class="ingrediente">{{ ingrediente }}</li>
         </ul>
+
         <p v-else class="paragrafo lista-vazia"> <img src="../assets/imagens-main/images/icones/lista-vazia.svg"
             alt="Ícone de pesquisa">
+
           Sua lista está vazia, selecione ingredientes para iniciar.</p>
       </span>
+
       <SelecionarIngredientes />
+
     </section>
+
 
   </main>
 </template>
