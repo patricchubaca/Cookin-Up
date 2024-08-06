@@ -1,4 +1,5 @@
 <script lang="ts">
+
 import SelecionarIngredientes from './SelecionarIngredientes.vue';
 
 export default {
@@ -15,7 +16,7 @@ export default {
 
 <template>
   <main class="conteudo-principal">
-    
+
     <section>
       <span class="subtitulo-lg sua-lista-texto">
         Sua lista:

@@ -1,6 +1,8 @@
 <script lang="ts">
+
 import type ICategoria from '@/interfaces/ICategoria';
 import type { PropType } from 'vue';
+
 export default {
     props: {
         categoria: { type: Object as PropType<ICategoria>, required: true }
@@ -24,11 +26,11 @@ export default {
                     {{ ingrediente }}
                 </li>
             </ul>
+
         </header>
-
     </article>
-
 </template>
+
 <style scoped>
 .categoria {
     width: 19.5rem;

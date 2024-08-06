@@ -1,4 +1,5 @@
 <script lang="ts">
+
 import type { PropType } from 'vue';
 import Tag from './Tag.vue';
 
